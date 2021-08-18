@@ -1,9 +1,24 @@
 {
     "MONDAY": [
         [
+            "MA2MPR",
+            "16:0",
+            "17:0",
+            "PALMER-110",
+            "Dr Peter Sweby",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-20",
+            "Mathematical Programming",
+            [
+                "Spring"
+            ]
+        ],
+        [
             "MA2NAN",
-            "14:0",
             "15:0",
+            "16:0",
             "POLLY-VACHER-G45",
             "Dr Peter Chamberlain",
             [
@@ -16,10 +31,26 @@
             ]
         ],
         [
+            "MA2DE",
+            "14:0",
+            "15:0",
+            "POLLY-VACHER-G45",
+            "Dr Peter Sweby",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-22",
+            "Differential Equations",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
             "CS2JA16",
             "9:0",
             "10:0",
-            "PALMER-110",
+            "POLLY-VACHER-G40",
             "Dr Varun Ojha",
             [
                 "BSc-CS-Y2"
@@ -34,26 +65,10 @@
     ],
     "TUESDAY": [
         [
-            "MA2DE",
-            "14:0",
-            "15:0",
-            "POLLY-VACHER-G50",
-            "Dr Peter Sweby",
-            [
-                "BSc-CS-Y2"
-            ],
-            "event-22",
-            "Differential Equations",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ],
-        [
             "CS2JA16",
-            "9:0",
             "10:0",
-            "PALMER-110",
+            "11:0",
+            "POLLY-VACHER-G40",
             "Dr Varun Ojha",
             [
                 "BSc-CS-Y2"
@@ -67,9 +82,9 @@
         ],
         [
             "CS2AO17",
-            "11:0",
-            "12:0",
-            "POLLY-VACHER-G45",
+            "9:0",
+            "10:0",
+            "POLLY-VACHER-G50",
             "PROF Xia Hong",
             [
                 "BSc-CS-Y2"
@@ -82,12 +97,29 @@
             ]
         ]
     ],
+    "WEDNESDAY": [
+        [
+            "MA2NAN",
+            "14:0",
+            "15:0",
+            "POLLY-VACHER-G50",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-21",
+            "Numerical Analysis",
+            [
+                "Spring"
+            ]
+        ]
+    ],
     "THURSDAY": [
         [
             "MA2RCA",
-            "16:0",
-            "17:0",
-            "PALMER-109",
+            "13:0",
+            "14:0",
+            "POLLY-VACHER-G56",
             "Dr Titus Hilberdink",
             [
                 "BSc-CS-Y2"
@@ -100,56 +132,9 @@
             ]
         ],
         [
-            "MA2MPR",
-            "15:0",
-            "16:0",
-            "PALMER-110",
-            "Dr Peter Sweby",
-            [
-                "BSc-CS-Y2"
-            ],
-            "event-20",
-            "Mathematical Programming",
-            [
-                "Spring"
-            ]
-        ]
-    ],
-    "FRIDAY": [
-        [
-            "MA2MPR",
-            "16:0",
-            "17:0",
-            "PALMER-110",
-            "Dr Peter Sweby",
-            [
-                "BSc-CS-Y2"
-            ],
-            "event-20",
-            "Mathematical Programming",
-            [
-                "Spring"
-            ]
-        ],
-        [
-            "MA2NAN",
-            "15:0",
-            "16:0",
-            "POLLY-VACHER-G45",
-            "Dr Peter Chamberlain",
-            [
-                "BSc-CS-Y2"
-            ],
-            "event-21",
-            "Numerical Analysis",
-            [
-                "Spring"
-            ]
-        ],
-        [
             "MA2DE",
-            "14:0",
             "15:0",
+            "16:0",
             "POLLY-VACHER-G45",
             "Dr Peter Sweby",
             [
@@ -159,6 +144,23 @@
             "Differential Equations",
             [
                 "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "FRIDAY": [
+        [
+            "MA2MPR",
+            "13:0",
+            "14:0",
+            "POLLY-VACHER-G40",
+            "Dr Peter Sweby",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-20",
+            "Mathematical Programming",
+            [
                 "Spring"
             ]
         ]

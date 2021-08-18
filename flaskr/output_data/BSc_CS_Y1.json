@@ -1,9 +1,75 @@
 {
     "MONDAY": [
         [
-            "MA1FM",
+            "MA1LA",
+            "16:0",
+            "17:0",
+            "POLLY-VACHER-G40",
+            "Prof Paul Glaister",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-14",
+            "Linear Algebra",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "CS1FC16",
+            "13:0",
+            "14:0",
+            "PALMER-110",
+            "Dr Hong Wei",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-17",
+            "Fundamentals of Computer Science",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "ST1PS",
+            "15:0",
+            "16:0",
+            "PALMER-109",
+            "Dr Karen Poulter",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-18",
+            "Probability and Statistics",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "TUESDAY": [
+        [
+            "MA1LA",
             "14:0",
             "15:0",
+            "PALMER-110",
+            "Prof Paul Glaister",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-14",
+            "Linear Algebra",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA1FM",
+            "16:0",
+            "17:0",
             "PALMER-110",
             "Dr Jani Virtanen",
             [
@@ -17,43 +83,9 @@
             ]
         ],
         [
-            "MA1CA",
-            "15:0",
-            "16:0",
-            "PALMER-109",
-            "Dr Peter Chamberlain",
-            [
-                "BSc-CS-Y1"
-            ],
-            "event-16",
-            "Calculus",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ],
-        [
             "CS1FC16",
-            "16:0",
-            "17:0",
-            "PALMER-110",
-            "Dr Hong Wei",
-            [
-                "BSc-CS-Y1"
-            ],
-            "event-17",
-            "Fundamentals of Computer Science",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ]
-    ],
-    "TUESDAY": [
-        [
-            "CS1FC16",
-            "16:0",
-            "17:0",
+            "13:0",
+            "14:0",
             "PALMER-110",
             "Dr Hong Wei",
             [
@@ -69,44 +101,10 @@
     ],
     "WEDNESDAY": [
         [
-            "ST1PS",
+            "MA1FM",
             "16:0",
             "17:0",
-            "PALMER-109",
-            "Dr Karen Poulter",
-            [
-                "BSc-CS-Y1"
-            ],
-            "event-18",
-            "Probability and Statistics",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ]
-    ],
-    "THURSDAY": [
-        [
-            "MA1LA",
-            "17:0",
-            "18:0",
-            "PALMER-110",
-            "Prof Paul Glaister",
-            [
-                "BSc-CS-Y1"
-            ],
-            "event-14",
-            "Linear Algebra",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ],
-        [
-            "MA1FM",
-            "14:0",
-            "15:0",
-            "PALMER-110",
+            "POLLY-VACHER-G40",
             "Dr Jani Virtanen",
             [
                 "BSc-CS-Y1"
@@ -120,8 +118,8 @@
         ],
         [
             "MA1CA",
+            "15:0",
             "16:0",
-            "17:0",
             "POLLY-VACHER-G56",
             "Dr Peter Chamberlain",
             [
@@ -137,16 +135,16 @@
     ],
     "FRIDAY": [
         [
-            "MA1LA",
-            "14:0",
+            "MA1CA",
             "15:0",
-            "PALMER-110",
-            "Prof Paul Glaister",
+            "16:0",
+            "POLLY-VACHER-G56",
+            "Dr Peter Chamberlain",
             [
                 "BSc-CS-Y1"
             ],
-            "event-14",
-            "Linear Algebra",
+            "event-16",
+            "Calculus",
             [
                 "Autumn",
                 "Spring"

@@ -1,9 +1,9 @@
 {
-    "MONDAY": [
+    "WEDNESDAY": [
         [
             "CS3VR16",
+            "13:0",
             "14:0",
-            "15:0",
             "PALMER-109",
             "Prof Richard Mitchell",
             [
@@ -15,29 +15,11 @@
             [
                 "Spring"
             ]
-        ]
-    ],
-    "WEDNESDAY": [
-        [
-            "CS3AI18-CSMAI19",
-            "10:0",
-            "12:0",
-            "POLLY-VACHER-G50",
-            "Dr Varun Ojha",
-            [
-                "PG-CS",
-                "BSc-CS-Y3"
-            ],
-            "event-1",
-            "Artificial Intelligence",
-            [
-                "Spring"
-            ]
         ],
         [
             "MA3NAT",
-            "14:0",
-            "16:0",
+            "9:0",
+            "11:0",
             "POLLY-VACHER-G56",
             "Dr Amos Lawless",
             [
@@ -53,9 +35,25 @@
     ],
     "THURSDAY": [
         [
+            "CS3AI18-CSMAI19",
+            "10:0",
+            "12:0",
+            "POLLY-VACHER-G45",
+            "Dr Varun Ojha",
+            [
+                "PG-CS",
+                "BSc-CS-Y3"
+            ],
+            "event-1",
+            "Artificial Intelligence",
+            [
+                "Spring"
+            ]
+        ],
+        [
             "CS3DS19",
-            "14:0",
-            "15:0",
+            "9:0",
+            "10:0",
             "POLLY-VACHER-G40",
             "Prof Giuseppe Di Fatta",
             [
@@ -71,9 +69,9 @@
     "FRIDAY": [
         [
             "CS3VI18",
-            "17:0",
-            "18:0",
-            "PALMER-109",
+            "13:0",
+            "14:0",
+            "POLLY-VACHER-G56",
             "Prof James Ferryman",
             [
                 "PG-CS",
@@ -87,8 +85,8 @@
         ],
         [
             "CS3DS19",
-            "14:0",
-            "15:0",
+            "9:0",
+            "10:0",
             "POLLY-VACHER-G40",
             "Prof Giuseppe Di Fatta",
             [
