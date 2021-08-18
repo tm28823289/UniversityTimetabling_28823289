@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-UK">
+<head>
+  <title>UniTimetabling Project</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Solving timetabling constraints using Z3Py solver">
+        <meta name="author" content="Satishkumar Pillai">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='UoR-Favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <nav>
+    <h1>University Timetabling</h1>
+      <ul>
+        {% if g.user %}
+          <li><span>{{ g.user['username'] }}</span>
+          <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+        {% else %}
+          <li><a href="{{ url_for('auth.register') }}">Register</a>
+          <li><a href="{{ url_for('auth.login') }}">Log In</a>
+        {% endif %}
+      </ul>
+  </nav>
+  
+</head>
+<body>
+  <div class="tableselector">
+    <form class ="drop-down" method="POST" action="#">
+      <table class="center">
+        <caption>Lecture Info</caption>
+          <tr>
+            <th>Module Code</th>
+            <th>Module Name</th>
+            <th>Module Convenor</th>
+            <th>Module Batch</th>
+            <th>Module Term</th>
+            <th>Lecture Room Capacity</th>
+            <th>Lecture Duration (in mins)</th>
+            <th>Lecture Frequency (per week)</th>
+          </tr>
+            {% for key in dataTerm.keys() %}
+              {% if key == 'Modules' %}
+                {% for n in range(dataTerm[key]| length) %}
+                  <tr>
+                    <td style="color:blue; cursor:pointer;" onclick="location.href='{{dataTerm[key][n][0]}}'">{{dataTerm[key][n][0]}}</td>
+                    <td>{{dataTerm[key][n][5]}}</td>
+                    <td>{{dataTerm[key][n][3]}}</td>
+                    <td>{{dataTerm[key][n][4]}}</td>
+                    <td>{{dataTerm[key][n][6]}}</td>
+                    <td>{{dataTerm[key][n][1]}}</td>
+                    <td>{{dataTerm[key][n][2][0]}}</td>
+                    <td>{{dataTerm[key][n][2] | length}}</td>
+                  </tr>
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+      </table>
+    </form>
+  </div>
+
+  <form method="GET" action="/run-z3solver">
+		<button type="submit">Schedule Timetable</button>
+	</form>

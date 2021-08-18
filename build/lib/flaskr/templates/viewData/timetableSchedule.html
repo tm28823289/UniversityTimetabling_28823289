@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en-UK">
+<head>
+  <title>UniTimetabling Project</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Solving timetabling constraints using Z3Py solver">
+        <meta name="author" content="Satishkumar Pillai">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/style.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='UoR-Favicon.ico') }}">
+  <title>UniTimetabling Schedule</title>
+  <style>
+    html {
+      font-family: sans-serif;
+      background: #eee;
+      padding: 4rem;
+    }
+
+    body {
+      max-width: 1800px;
+      margin: 0 auto;
+      background: white;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: serif;
+      color: #377ba8;
+      margin: 2rem 0;
+    }
+
+    a {
+      color: #377ba8;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid lightgray;
+    }
+
+    nav {
+      background: lightgray;
+      display: flex;
+      align-items: center;
+      padding: 0 0.5rem;
+    }
+
+    nav h1 {
+      flex: auto;
+      margin: 0;
+    }
+
+    nav h1 a {
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+    }
+
+    nav ul  {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a, nav ul li span, header .action {
+      display: block;
+      padding: 0.5rem;
+    }
+
+    .content {
+      padding: 0 1rem 1rem;
+    }
+
+    .content > header {
+      border-bottom: 1px solid lightgray;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .content > header h1 {
+      flex: auto;
+      margin: 1rem 0 0.25rem 0;
+    }
+
+    .flash {
+      margin: 1em 0;
+      padding: 1em;
+      background: #cae6f6;
+      border: 1px solid #377ba8;
+    }
+
+    .post > header {
+      display: flex;
+      align-items: flex-end;
+      font-size: 0.85em;
+    }
+
+    .post > header > div:first-of-type {
+      flex: auto;
+    }
+
+    .post > header h1 {
+      font-size: 1.5em;
+      margin-bottom: 0;
+    }
+
+    .post .about {
+      color: slategray;
+      font-style: italic;
+    }
+
+    .post .body {
+      white-space: pre-line;
+    }
+
+    .content:last-child {
+      margin-bottom: 0;
+    }
+
+    .content form {
+      margin: 1em 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content label {
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+
+    .content input, .content textarea {
+      margin-bottom: 1em;
+    }
+
+    .content textarea {
+      min-height: 12em;
+      resize: vertical;
+    }
+
+    input.danger {
+      color: #cc2f2e;
+    }
+
+    input[type=submit] {
+      align-self: start;
+      min-width: 10em;
+    }
+
+  </style>
+
+  <nav>
+    <h1>University Timetabling</h1>
+      <ul>
+        {% if g.user %}
+          <li><span>{{ g.user['username'] }}</span>
+          <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+        {% else %}
+          <li><a href="{{ url_for('auth.register') }}">Register</a>
+          <li><a href="{{ url_for('auth.login') }}">Log In</a>
+        {% endif %}
+      </ul>
+  </nav>
+</head>
+<body>
+  <form class ="drop-down" method="POST" action="/timetableSchedule">
+    <label for="batch">Choose a batch:</label>
+    <select name="batch" id="batch" autofocus required>
+      <option value="">None</option>
+      <optgroup label="Undergradutaes">
+        <option name="BSc_CS_Y1" value="BSc_CS_Y1.json">BSc_CS_Y1</option>
+        <option name="BSc_CS_Y2" value="BSc_CS_Y2.json">BSc_CS_Y2</option>
+        <option name="BSc_CS_Y3" value="BSc_CS_Y3.json">BSc_CS_Y3</option>
+      </optgroup>
+      <optgroup label="Postgraduates">
+        <option name="PG_CS" value="PG_CS.json">PG_CS</option>
+        <option name="PG_IMDB" value="PG_IMDB.json">PG_IMDB</option>
+      </optgroup>
+    </select>
+    <br><br>
+    <!-- <input class="drop-down" type="submit" value="Submit"> -->
+    <button type="submit" class="btn-primary">Submit</button>
+  </form>
+
+ <div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">
+    <div class="cd-schedule__timeline">
+      <ul>
+        <li><span>08:00</span></li>
+        <li><span>08:30</span></li>
+        <li><span>09:00</span></li>
+        <li><span>09:30</span></li>
+        <li><span>10:00</span></li>
+        <li><span>10:30</span></li>
+        <li><span>11:00</span></li>
+        <li><span>11:30</span></li>
+        <li><span>12:00</span></li>
+        <li><span>12:30</span></li>
+        <li><span>13:00</span></li>
+        <li><span>13:30</span></li>
+        <li><span>14:00</span></li>
+        <li><span>14:30</span></li>
+        <li><span>15:00</span></li>
+        <li><span>15:30</span></li>
+        <li><span>16:00</span></li>
+        <li><span>16:30</span></li>
+        <li><span>17:00</span></li>
+        <li><span>17:30</span></li>
+        <li><span>18:00</span></li>
+      </ul>
+    </div> <!-- .cd-schedule__timeline -->
+  
+    <div class="cd-schedule__events">
+      <ul>
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Monday</span></div>
+          <ul>
+              {% for key in data_dict.keys() %}
+                {% for n in range(data_dict[key]| length) %}
+                  {% if key == 'MONDAY' %}
+                    <li class="cd-schedule__event">
+                      <a data-start={{data_dict[key][n][1]}} data-end={{data_dict[key][n][2]}} data-content={{data_dict[key][n][0]}} data-event={{data_dict[key][n][6]}} href="#0">
+                        <em class="cd-schedule__name">{{data_dict[key][n][0]}}</em>
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+          </ul>
+        </li>
+  
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Tuesday</span></div>
+          <ul>
+              {% for key in data_dict.keys() %}
+                {% for n in range(data_dict[key]| length) %}
+                  {% if key == 'TUESDAY' %}
+                    <li class="cd-schedule__event">
+                      <a data-start={{data_dict[key][n][1]}} data-end={{data_dict[key][n][2]}} data-content={{data_dict[key][n][0]}} data-event={{data_dict[key][n][6]}} href="#0">
+                        <em class="cd-schedule__name">{{data_dict[key][n][0]}}</em>
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+          </ul>
+        </li>
+  
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Wednesday</span></div>
+          <ul>
+              {% for key in data_dict.keys() %}
+                {% for n in range(data_dict[key]| length) %}
+                  {% if key == 'WEDNESDAY' %}
+                    <li class="cd-schedule__event">
+                      <a data-start={{data_dict[key][n][1]}} data-end={{data_dict[key][n][2]}} data-content={{data_dict[key][n][0]}} data-event={{data_dict[key][n][6]}} href="#0">
+                        <em class="cd-schedule__name">{{data_dict[key][n][0]}}</em>
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+          </ul>
+        </li>
+  
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Thursday</span></div>
+          <ul>
+              {% for key in data_dict.keys() %}
+                {% for n in range(data_dict[key]| length) %}
+                  {% if key == 'THURSDAY' %}
+                    <li class="cd-schedule__event">
+                      <a data-start={{data_dict[key][n][1]}} data-end={{data_dict[key][n][2]}} data-content={{data_dict[key][n][0]}} data-event={{data_dict[key][n][6]}} href="#0">
+                        <em class="cd-schedule__name">{{data_dict[key][n][0]}}</em>
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+          </ul>
+        </li>
+  
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Friday</span></div>
+          <ul>
+              {% for key in data_dict.keys() %}
+                {% for n in range(data_dict[key]| length) %}
+                  {% if key == 'FRIDAY' %}
+                    <li class="cd-schedule__event">
+                      <a data-start={{data_dict[key][n][1]}} data-end={{data_dict[key][n][2]}} data-content={{data_dict[key][n][0]}} data-event={{data_dict[key][n][6]}} href="#0">
+                        <em class="cd-schedule__name">{{data_dict[key][n][0]}}</em>
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+          </ul>
+        </li>
+    </div>
+  
+    <div class="cd-schedule-modal">
+      <header class="cd-schedule-modal__header">
+        <div class="cd-schedule-modal__content">
+          <span class="cd-schedule-modal__date"></span>
+          <h3 class="cd-schedule-modal__name"></h3>
+        </div>
+  
+        <div class="cd-schedule-modal__header-bg"></div>
+      </header>
+  
+      <div class="cd-schedule-modal__body">
+        <div class="cd-schedule-modal__event-info"></div>
+        <div class="cd-schedule-modal__body-bg"></div>
+      </div>
+  
+      <a href="#0" class="cd-schedule-modal__close text-replace">Close</a>
+    </div>
+  
+    <div class="cd-schedule__cover-layer"></div>
+  </div> <!-- .cd-schedule -->
+
+  <script src="./static/assets/js/util.js"></script> 
+  <script src="./static/assets/js/main.js"></script>
+</body>
+</html>

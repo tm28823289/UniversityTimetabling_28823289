@@ -1,0 +1,17 @@
+<div class="cd-schedule-modal__event-info">
+	<div>
+		{% set count = namespace(value=0) %}
+		{% for key in data_dict.keys() %}
+			{% for n in range(data_dict[key]| length) %}
+   				{% if data_dict[key][n][0] == 'MA2RCA' and count.value == 0 %}
+				   <p><span class = "class-for-span">Module Code:</span> {{data_dict[key][n][0]}} <br></p>
+				   <p><span class = "class-for-span">Module Name:</span> {{data_dict[key][n][7]}} <br></p>
+				   <p><span class = "class-for-span">Lecture Room:</span> {{data_dict[key][n][3]}} <br></p>
+				   <p><span class = "class-for-span">Faculty:</span> {{data_dict[key][n][4]}} <br></p>
+				   <p><span class = "class-for-span">Batch:</span> {{data_dict[key][n][5]}} <br><br></p>
+					{% set count.value = count.value + 1 %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	</div>
+</div>
