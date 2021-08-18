@@ -1,1 +1,1 @@
-web: flaskr-2.0.1-py3-none-any.whl
+web: gunicorn app:flaskr
