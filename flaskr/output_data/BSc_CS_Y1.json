@@ -2,8 +2,8 @@
     "MONDAY": [
         [
             "MA1FM",
+            "14:0",
             "15:0",
-            "16:0",
             "PALMER-110",
             "Dr Jani Virtanen",
             [
@@ -18,8 +18,8 @@
         ],
         [
             "MA1CA",
-            "14:0",
             "15:0",
+            "16:0",
             "PALMER-109",
             "Dr Peter Chamberlain",
             [
@@ -34,8 +34,8 @@
         ],
         [
             "CS1FC16",
+            "16:0",
             "17:0",
-            "18:0",
             "PALMER-110",
             "Dr Hong Wei",
             [
@@ -52,8 +52,8 @@
     "TUESDAY": [
         [
             "CS1FC16",
+            "16:0",
             "17:0",
-            "18:0",
             "PALMER-110",
             "Dr Hong Wei",
             [
@@ -69,41 +69,9 @@
     ],
     "WEDNESDAY": [
         [
-            "MA1LA",
-            "15:0",
-            "16:0",
-            "PALMER-110",
-            "Prof Paul Glaister",
-            [
-                "BSc-CS-Y1"
-            ],
-            "event-14",
-            "Linear Algebra",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ],
-        [
-            "MA1CA",
-            "17:0",
-            "18:0",
-            "PALMER-109",
-            "Dr Peter Chamberlain",
-            [
-                "BSc-CS-Y1"
-            ],
-            "event-16",
-            "Calculus",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ],
-        [
             "ST1PS",
-            "14:0",
-            "15:0",
+            "16:0",
+            "17:0",
             "PALMER-109",
             "Dr Karen Poulter",
             [
@@ -133,13 +101,11 @@
                 "Autumn",
                 "Spring"
             ]
-        ]
-    ],
-    "FRIDAY": [
+        ],
         [
             "MA1FM",
+            "14:0",
             "15:0",
-            "16:0",
             "PALMER-110",
             "Dr Jani Virtanen",
             [
@@ -147,6 +113,40 @@
             ],
             "event-15",
             "Foundations of Mathematics",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA1CA",
+            "16:0",
+            "17:0",
+            "POLLY-VACHER-G56",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-16",
+            "Calculus",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "FRIDAY": [
+        [
+            "MA1LA",
+            "14:0",
+            "15:0",
+            "PALMER-110",
+            "Prof Paul Glaister",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-14",
+            "Linear Algebra",
             [
                 "Autumn",
                 "Spring"

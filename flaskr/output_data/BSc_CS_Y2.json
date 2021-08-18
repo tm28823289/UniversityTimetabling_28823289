@@ -2,8 +2,8 @@
     "MONDAY": [
         [
             "MA2NAN",
+            "14:0",
             "15:0",
-            "16:0",
             "POLLY-VACHER-G45",
             "Dr Peter Chamberlain",
             [
@@ -17,8 +17,8 @@
         ],
         [
             "CS2JA16",
+            "9:0",
             "10:0",
-            "11:0",
             "PALMER-110",
             "Dr Varun Ojha",
             [
@@ -35,8 +35,8 @@
     "TUESDAY": [
         [
             "MA2DE",
+            "14:0",
             "15:0",
-            "16:0",
             "POLLY-VACHER-G50",
             "Dr Peter Sweby",
             [
@@ -67,8 +67,8 @@
         ],
         [
             "CS2AO17",
-            "10:0",
             "11:0",
+            "12:0",
             "POLLY-VACHER-G45",
             "PROF Xia Hong",
             [
@@ -85,8 +85,8 @@
     "THURSDAY": [
         [
             "MA2RCA",
+            "16:0",
             "17:0",
-            "18:0",
             "PALMER-109",
             "Dr Titus Hilberdink",
             [
@@ -118,8 +118,8 @@
     "FRIDAY": [
         [
             "MA2MPR",
+            "16:0",
             "17:0",
-            "18:0",
             "PALMER-110",
             "Dr Peter Sweby",
             [
@@ -133,8 +133,8 @@
         ],
         [
             "MA2NAN",
-            "14:0",
             "15:0",
+            "16:0",
             "POLLY-VACHER-G45",
             "Dr Peter Chamberlain",
             [
@@ -148,8 +148,8 @@
         ],
         [
             "MA2DE",
+            "14:0",
             "15:0",
-            "16:0",
             "POLLY-VACHER-G45",
             "Dr Peter Sweby",
             [
