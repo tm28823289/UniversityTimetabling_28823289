@@ -1,0 +1,166 @@
+{
+    "MONDAY": [
+        [
+            "MA2NAN",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G45",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-21",
+            "Numerical Analysis",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "CS2JA16",
+            "10:0",
+            "11:0",
+            "PALMER-110",
+            "Dr Varun Ojha",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-23",
+            "Java",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "TUESDAY": [
+        [
+            "MA2DE",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G50",
+            "Dr Peter Sweby",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-22",
+            "Differential Equations",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "CS2JA16",
+            "9:0",
+            "10:0",
+            "PALMER-110",
+            "Dr Varun Ojha",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-23",
+            "Java",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "CS2AO17",
+            "10:0",
+            "11:0",
+            "POLLY-VACHER-G45",
+            "PROF Xia Hong",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-24",
+            "Algorithms and Operating Systems",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "THURSDAY": [
+        [
+            "MA2RCA",
+            "17:0",
+            "18:0",
+            "PALMER-109",
+            "Dr Titus Hilberdink",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-19",
+            "Real and Complex Analysis",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA2MPR",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Dr Peter Sweby",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-20",
+            "Mathematical Programming",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "FRIDAY": [
+        [
+            "MA2MPR",
+            "17:0",
+            "18:0",
+            "PALMER-110",
+            "Dr Peter Sweby",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-20",
+            "Mathematical Programming",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "MA2NAN",
+            "14:0",
+            "15:0",
+            "POLLY-VACHER-G45",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-21",
+            "Numerical Analysis",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "MA2DE",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G45",
+            "Dr Peter Sweby",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-22",
+            "Differential Equations",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ]
+}

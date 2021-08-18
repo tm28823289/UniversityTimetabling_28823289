@@ -1,0 +1,104 @@
+{
+    "MONDAY": [
+        [
+            "CS3AI18-CSMAI19",
+            "11:0",
+            "13:0",
+            "POLLY-VACHER-G50",
+            "Dr Varun Ojha",
+            [
+                "PG-CS",
+                "BSc-CS-Y3"
+            ],
+            "event-1",
+            "Artificial Intelligence",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "CS3VR16",
+            "15:0",
+            "16:0",
+            "PALMER-109",
+            "Prof Richard Mitchell",
+            [
+                "PG-CS",
+                "BSc-CS-Y3"
+            ],
+            "event-6",
+            "Virtual Reality",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "WEDNESDAY": [
+        [
+            "MA3NAT",
+            "14:0",
+            "16:0",
+            "POLLY-VACHER-G56",
+            "Dr Amos Lawless",
+            [
+                "BSc-CS-Y3"
+            ],
+            "event-25",
+            "Numerical Analysis II",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "THURSDAY": [
+        [
+            "CS3DS19",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G40",
+            "Prof Giuseppe Di Fatta",
+            [
+                "BSc-CS-Y3"
+            ],
+            "event-26",
+            "Data Science Algorithms and Tools",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "FRIDAY": [
+        [
+            "CS3VI18",
+            "14:0",
+            "15:0",
+            "PALMER-109",
+            "Prof James Ferryman",
+            [
+                "PG-CS",
+                "BSc-CS-Y3"
+            ],
+            "event-5",
+            "Visual Intelligence",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "CS3DS19",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G40",
+            "Prof Giuseppe Di Fatta",
+            [
+                "BSc-CS-Y3"
+            ],
+            "event-26",
+            "Data Science Algorithms and Tools",
+            [
+                "Spring"
+            ]
+        ]
+    ]
+}

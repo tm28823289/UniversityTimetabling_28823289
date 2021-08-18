@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-UK">
+<head>
+  <title>UniTimetabling Project</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Solving timetabling constraints using Z3Py solver">
+        <meta name="author" content="Satishkumar Pillai">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='UoR-Favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <nav>
+    <h1>University Timetabling</h1>
+      <ul>
+        {% if g.user %}
+          <li><span>{{ g.user['username'] }}</span>
+          <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+        {% else %}
+          <li><a href="{{ url_for('auth.register') }}">Register</a>
+          <li><a href="{{ url_for('auth.login') }}">Log In</a>
+        {% endif %}
+      </ul>
+  </nav>
+  
+</head>
+
+<body>
+  <div class="timeselector">
+    <form class ="drop-down" method="POST" action="/selecttermdata">
+        <p>Select Morning Start Time-Slot<span class="required">*</span></p>
+        <div class="uni-time">
+          <select name="morningStartTime" id="morningStartTime">
+            <option value="">None</option>
+              <optgroup label="Morning StartTime">
+                <option value="8.00">8.00</option>
+                <option value="9.00">9.00</option>
+              </optgroup>
+          </select>
+        </div>
+        <p>Select Morning End Time-Slot<span class="required">*</span></p>
+        <div class="uni-time">
+          <select name="morningEndTime" id="morningEndTime">
+            <option value="">None</option>
+              <optgroup label="Morning EndTime">
+                <option value="12.00">12.00</option>
+                <option value="13.00">13.00</option>
+              </optgroup>
+          </select>
+        </div>
+        <p>Select Afternoon Start Time-Slot<span class="required">*</span></p>
+        <div class="uni-time">
+          <select name="afternoonStartTime" id="afternoonStartTime">
+            <option value="">None</option>
+              <optgroup label="Afternoon StartTime">
+                <option value="13.00">13.00</option>
+                <option value="14.00">14.00</option>
+              </optgroup>
+          </select>
+        </div>
+        <p>Select Afternoon End Time-Slot<span class="required">*</span></p>
+        <div class="uni-time">
+          <select name="afternoonEndTime" id="afternoonEndTime">
+            <option value="">None</option>
+              <optgroup label="Afternoon EndTime">
+                <option value="17.00">17.00</option>
+                <option value="18.00">18.00</option>
+              </optgroup>
+          </select>
+        </div>
+        <p>Select Term<span class="required">*</span></p>
+        <div class="uni-term">
+          <select name="term" id="term">
+            <option value="">None</option>
+            <option name="autumn" value="autumn.json">Autumn</option>
+            <option name="spring" value="spring.json">Spring</option>
+          </select>
+        <button style=display:inline-flex  type="submit" class="btn-primary">Add</button>
+        </div>
+    </form>
+  </div>

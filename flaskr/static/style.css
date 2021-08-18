@@ -1,0 +1,187 @@
+html {
+  font-family: sans-serif;
+  background: #eee;
+  padding: 4rem;
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: serif;
+  color: #377ba8;
+  margin: 2rem 0;
+}
+
+a {
+  color: #377ba8;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid lightgray;
+}
+
+nav {
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+nav h1 {
+  flex: auto;
+  margin: 0;
+}
+
+nav h1 a {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+
+nav ul  {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a, nav ul li span, header .action {
+  display: block;
+  padding: 0.5rem;
+}
+
+.content {
+  padding: 0 1rem 1rem;
+}
+
+.content > header {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: flex-end;
+}
+
+.content > header h1 {
+  flex: auto;
+  margin: 1rem 0 0.25rem 0;
+}
+
+.flash {
+  margin: 1em 0;
+  padding: 1em;
+  background: #cae6f6;
+  border: 1px solid #377ba8;
+}
+
+.post > header {
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.85em;
+}
+
+.post > header > div:first-of-type {
+  flex: auto;
+}
+
+.post > header h1 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.post .about {
+  color: slategray;
+  font-style: italic;
+}
+
+.post .body {
+  white-space: pre-line;
+}
+
+.content:last-child {
+  margin-bottom: 0;
+}
+
+.content form {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.content input, .content textarea {
+  margin-bottom: 1em;
+}
+
+.content textarea {
+  min-height: 12em;
+  resize: vertical;
+}
+
+input.danger {
+  color: #cc2f2e;
+}
+
+input[type=submit] {
+  align-self: start;
+  min-width: 10em;
+}
+
+.timeselector , .termselector, .batchselector {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;      
+      
+} 
+
+span.required {
+  color: red;
+}
+
+p.top-info {
+  margin: 10px 0;
+}
+
+.uni-time input:hover, .uni-time select:hover, .batch-selector input:hover, .batch-selector select:hover, .uni-term input:hover, .uni-term select:hover, .select1 input:hover, .select1 select:hover, .select2 input:hover, .select2 select:hover, .select3 input:hover, .select3 select:hover .room-capacity input:hover, .room-capacity select:hover, .lecture-duration input:hover, .lecture-duration select:hover, .lecture-frequency input:hover, lecture-frequency select:hover {
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px 0 #095484;
+  color: #095484;
+}
+
+.uni-time , .batch-selector, .uni-term, .select1, .select2, .select3, .lecture-frequency, .lecture-duration, .room-capacity {
+  position: relative;
+  margin: 10px 0;
+}
+
+.uni-time input , .batch-selector input, .uni-term input, .select1 input, .select2 input, .select3 input, .room-capacity input, .lecture-duration input, .lecture-frequency input {
+  width: calc(10% - 20px);
+}
+
+.uni-time input , .batch-selector input, .uni-term input, .select1 input, .select2 input, .select3 input, .room-capacity input, .lecture-duration input, .lecture-frequency input {
+  width: calc(10% - 20px);
+}
+
+.uni-time select , .batch-selector select, .uni-term select, .select1 select, .select2 select, .select3 select, .room-capacity select, .lecture-duration select, .lecture-frequency select {
+  width: calc(10% - 8px);
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+      
+th, td {
+  padding: 20px;
+}
+      
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}

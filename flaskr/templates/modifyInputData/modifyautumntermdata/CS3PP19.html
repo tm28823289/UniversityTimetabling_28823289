@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-UK">
+<head>
+  <title>UniTimetabling Project</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Solving timetabling constraints using Z3Py solver">
+        <meta name="author" content="Satishkumar Pillai">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='UoR-Favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <nav>
+    <h1>University Timetabling</h1>
+      <ul>
+        {% if g.user %}
+          <li><span>{{ g.user['username'] }}</span>
+          <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+        {% else %}
+          <li><a href="{{ url_for('auth.register') }}">Register</a>
+          <li><a href="{{ url_for('auth.login') }}">Log In</a>
+        {% endif %}
+      </ul>
+  </nav>
+   
+</head>
+<body>
+	<div class="timeselector">
+    <form class ="drop-down" method="POST" action="#">
+      <p>Select Room Capacity<span class="required">*</span></p>
+      <div class="room-capacity">
+        <select name="capacity" id="capacity">
+          <option value="">None</option>
+            <optgroup label="Room Capacity">
+              <option value="small">small</option>
+              <option value="medium">medium</option>
+							<option value="large">large</option>
+            </optgroup>
+        </select>
+      <p>Select Lecture Duration<span class="required">*</span></p>
+      <div class="lecture-duration">
+        <select name="duration" id="duration">
+          <option value="">None</option>
+            <optgroup label="Lecture Duration">
+              <option value="60">60</option>
+              <option value="120">120</option>
+              </optgroup>
+        </select>
+      <p>Select Lecture Frequency<span class="required">*</span></p>
+      <div class="lecture-frequency">
+        <select name="frequency" id="frequency">
+          <option value="">None</option>
+						<optgroup label="Lecture Frequency">
+            	<option value="1">1</option>
+            	<option value="2">2</option>
+							<option value="3">3</option>
+						</optgroup>
+        </select>
+        <button style=display:inline-flex  type="submit" class="btn-primary">Update</button>
+      </div>
+    </form>
+  </div>		
+
+  <div class="tableModule">
+		<form class ="table">
+	  	<table class="center">
+				<caption>Module Info</caption>
+		  		<tr>
+					 <th>Module Code</th>
+					 <th>Module Name</th>
+					 <th>Module Convenor</th>
+					 <th>Module Batch</th>
+					 <th>Module Term</th>
+					 <th>Lecture Room Capacity</th>
+            <th>Lecture Duration (in mins)</th>
+            <th>Lecture Frequency (per week)</th>
+				  </tr>
+					{% for key in autumndata.keys() %}
+			  	  {% if key == 'Modules' %}
+							{% for n in range(autumndata[key]| length) %}
+								{% if autumndata[key][n][0] == 'CS3PP19' %}
+				  				<tr>
+										<td>{{autumndata[key][n][0]}}</td>
+										<td>{{autumndata[key][n][5]}}</td>
+										<td>{{autumndata[key][n][3]}}</td>
+										<td>{{autumndata[key][n][4]}}</td>
+										<td>{{autumndata[key][n][6]}}</td>
+										<td>{{autumndata[key][n][1]}}</td>
+                  	<td>{{autumndata[key][n][2][0]}}</td>
+                  	<td>{{autumndata[key][n][2] | length}}</td>
+									</tr>
+								{% endif %}
+							{% endfor %}
+			  		{% endif %}
+					{% endfor %}
+	  	</table>
+		</form>
+  </div>
+	
+	<form method="GET" action="/selecttermdata">
+		<button type="submit">Continue</button>
+	</form>

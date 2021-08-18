@@ -1,0 +1,194 @@
+{
+    "MONDAY": [
+        [
+            "MMM077",
+            "14:0",
+            "15:0",
+            "HENLEY-G09",
+            "Prof Michael Starkey",
+            [
+                "PG-CS",
+                "PG-IM&DB"
+            ],
+            "event-2",
+            "Digital Marketing",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR93",
+            "11:0",
+            "12:0",
+            "HENLEY-G13",
+            "Dr Yin Leng Tan",
+            [
+                "PG-IM&DB"
+            ],
+            "event-8",
+            "Digital Innovation",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR77",
+            "10:0",
+            "11:0",
+            "HENLEY-G11",
+            "Dr Yin Leng Tan",
+            [
+                "PG-IM&DB"
+            ],
+            "event-10",
+            "Business Intelligence and Data Mining",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR96",
+            "15:0",
+            "16:0",
+            "HENLEY-G13",
+            "Dr Vicky Weizi Li",
+            [
+                "PG-IM&DB"
+            ],
+            "event-12",
+            "Digital Health and Data Analytics",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "TUESDAY": [
+        [
+            "INMR77",
+            "10:0",
+            "11:0",
+            "HENLEY-G11",
+            "Dr Yin Leng Tan",
+            [
+                "PG-IM&DB"
+            ],
+            "event-10",
+            "Business Intelligence and Data Mining",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR86",
+            "14:0",
+            "15:0",
+            "HENLEY-G09",
+            "Dr Vaughan Michell",
+            [
+                "PG-IM&DB"
+            ],
+            "event-11",
+            "Business Technology Consulting",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "WEDNESDAY": [
+        [
+            "MMM077",
+            "14:0",
+            "15:0",
+            "HENLEY-G09",
+            "Prof Michael Starkey",
+            [
+                "PG-CS",
+                "PG-IM&DB"
+            ],
+            "event-2",
+            "Digital Marketing",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR89",
+            "17:0",
+            "18:0",
+            "HENLEY-G09",
+            "Prof Keiichi Nakata",
+            [
+                "PG-IM&DB"
+            ],
+            "event-9",
+            "Big Data in Business",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR86",
+            "16:0",
+            "17:0",
+            "HENLEY-G09",
+            "Dr Vaughan Michell",
+            [
+                "PG-IM&DB"
+            ],
+            "event-11",
+            "Business Technology Consulting",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR96",
+            "15:0",
+            "16:0",
+            "HENLEY-G13",
+            "Dr Vicky Weizi Li",
+            [
+                "PG-IM&DB"
+            ],
+            "event-12",
+            "Digital Health and Data Analytics",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "THURSDAY": [
+        [
+            "INMR65",
+            "15:0",
+            "16:0",
+            "HENLEY-G13",
+            "Prof Yinshan Tang",
+            [
+                "PG-IM&DB"
+            ],
+            "event-13",
+            "IT Project Management",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "FRIDAY": [
+        [
+            "INMR89",
+            "15:0",
+            "16:0",
+            "HENLEY-G10",
+            "Prof Keiichi Nakata",
+            [
+                "PG-IM&DB"
+            ],
+            "event-9",
+            "Big Data in Business",
+            [
+                "Spring"
+            ]
+        ]
+    ]
+}

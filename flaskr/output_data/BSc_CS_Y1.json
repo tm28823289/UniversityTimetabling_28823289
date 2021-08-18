@@ -1,0 +1,156 @@
+{
+    "MONDAY": [
+        [
+            "MA1FM",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Dr Jani Virtanen",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-15",
+            "Foundations of Mathematics",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA1CA",
+            "14:0",
+            "15:0",
+            "PALMER-109",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-16",
+            "Calculus",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "CS1FC16",
+            "17:0",
+            "18:0",
+            "PALMER-110",
+            "Dr Hong Wei",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-17",
+            "Fundamentals of Computer Science",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "TUESDAY": [
+        [
+            "CS1FC16",
+            "17:0",
+            "18:0",
+            "PALMER-110",
+            "Dr Hong Wei",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-17",
+            "Fundamentals of Computer Science",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "WEDNESDAY": [
+        [
+            "MA1LA",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Prof Paul Glaister",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-14",
+            "Linear Algebra",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA1CA",
+            "17:0",
+            "18:0",
+            "PALMER-109",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-16",
+            "Calculus",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "ST1PS",
+            "14:0",
+            "15:0",
+            "PALMER-109",
+            "Dr Karen Poulter",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-18",
+            "Probability and Statistics",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "THURSDAY": [
+        [
+            "MA1LA",
+            "17:0",
+            "18:0",
+            "PALMER-110",
+            "Prof Paul Glaister",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-14",
+            "Linear Algebra",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "FRIDAY": [
+        [
+            "MA1FM",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Dr Jani Virtanen",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-15",
+            "Foundations of Mathematics",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ]
+}

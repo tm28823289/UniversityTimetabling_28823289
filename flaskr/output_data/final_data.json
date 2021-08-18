@@ -1,0 +1,633 @@
+{
+    "MONDAY": [
+        [
+            "CS3AI18-CSMAI19",
+            "11:0",
+            "13:0",
+            "POLLY-VACHER-G50",
+            "Dr Varun Ojha",
+            [
+                "PG-CS",
+                "BSc-CS-Y3"
+            ],
+            "event-1",
+            "Artificial Intelligence",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "MMM077",
+            "14:0",
+            "15:0",
+            "HENLEY-G09",
+            "Prof Michael Starkey",
+            [
+                "PG-CS",
+                "PG-IM&DB"
+            ],
+            "event-2",
+            "Digital Marketing",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "CS3VR16",
+            "15:0",
+            "16:0",
+            "PALMER-109",
+            "Prof Richard Mitchell",
+            [
+                "PG-CS",
+                "BSc-CS-Y3"
+            ],
+            "event-6",
+            "Virtual Reality",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR93",
+            "11:0",
+            "12:0",
+            "HENLEY-G13",
+            "Dr Yin Leng Tan",
+            [
+                "PG-IM&DB"
+            ],
+            "event-8",
+            "Digital Innovation",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR77",
+            "10:0",
+            "11:0",
+            "HENLEY-G11",
+            "Dr Yin Leng Tan",
+            [
+                "PG-IM&DB"
+            ],
+            "event-10",
+            "Business Intelligence and Data Mining",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR96",
+            "15:0",
+            "16:0",
+            "HENLEY-G13",
+            "Dr Vicky Weizi Li",
+            [
+                "PG-IM&DB"
+            ],
+            "event-12",
+            "Digital Health and Data Analytics",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "MA1FM",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Dr Jani Virtanen",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-15",
+            "Foundations of Mathematics",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA1CA",
+            "14:0",
+            "15:0",
+            "PALMER-109",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-16",
+            "Calculus",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "CS1FC16",
+            "17:0",
+            "18:0",
+            "PALMER-110",
+            "Dr Hong Wei",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-17",
+            "Fundamentals of Computer Science",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA2NAN",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G45",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-21",
+            "Numerical Analysis",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "CS2JA16",
+            "10:0",
+            "11:0",
+            "PALMER-110",
+            "Dr Varun Ojha",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-23",
+            "Java",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "TUESDAY": [
+        [
+            "CSMBD16",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Dr Mohammed Al-Khafajiy",
+            [
+                "PG-CS"
+            ],
+            "event-3",
+            "Big Data Analytics",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR77",
+            "10:0",
+            "11:0",
+            "HENLEY-G11",
+            "Dr Yin Leng Tan",
+            [
+                "PG-IM&DB"
+            ],
+            "event-10",
+            "Business Intelligence and Data Mining",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR86",
+            "14:0",
+            "15:0",
+            "HENLEY-G09",
+            "Dr Vaughan Michell",
+            [
+                "PG-IM&DB"
+            ],
+            "event-11",
+            "Business Technology Consulting",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "CS1FC16",
+            "17:0",
+            "18:0",
+            "PALMER-110",
+            "Dr Hong Wei",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-17",
+            "Fundamentals of Computer Science",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA2DE",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G50",
+            "Dr Peter Sweby",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-22",
+            "Differential Equations",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "CS2JA16",
+            "9:0",
+            "10:0",
+            "PALMER-110",
+            "Dr Varun Ojha",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-23",
+            "Java",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "CS2AO17",
+            "10:0",
+            "11:0",
+            "POLLY-VACHER-G45",
+            "PROF Xia Hong",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-24",
+            "Algorithms and Operating Systems",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "WEDNESDAY": [
+        [
+            "MMM077",
+            "14:0",
+            "15:0",
+            "HENLEY-G09",
+            "Prof Michael Starkey",
+            [
+                "PG-CS",
+                "PG-IM&DB"
+            ],
+            "event-2",
+            "Digital Marketing",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR89",
+            "17:0",
+            "18:0",
+            "HENLEY-G09",
+            "Prof Keiichi Nakata",
+            [
+                "PG-IM&DB"
+            ],
+            "event-9",
+            "Big Data in Business",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR86",
+            "16:0",
+            "17:0",
+            "HENLEY-G09",
+            "Dr Vaughan Michell",
+            [
+                "PG-IM&DB"
+            ],
+            "event-11",
+            "Business Technology Consulting",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR96",
+            "15:0",
+            "16:0",
+            "HENLEY-G13",
+            "Dr Vicky Weizi Li",
+            [
+                "PG-IM&DB"
+            ],
+            "event-12",
+            "Digital Health and Data Analytics",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "MA1LA",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Prof Paul Glaister",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-14",
+            "Linear Algebra",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA1CA",
+            "17:0",
+            "18:0",
+            "PALMER-109",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-16",
+            "Calculus",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "ST1PS",
+            "14:0",
+            "15:0",
+            "PALMER-109",
+            "Dr Karen Poulter",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-18",
+            "Probability and Statistics",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA3NAT",
+            "14:0",
+            "16:0",
+            "POLLY-VACHER-G56",
+            "Dr Amos Lawless",
+            [
+                "BSc-CS-Y3"
+            ],
+            "event-25",
+            "Numerical Analysis II",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "THURSDAY": [
+        [
+            "CSMML16",
+            "16:0",
+            "17:0",
+            "PALMER-109",
+            "Prof Richard Mitchell",
+            [
+                "PG-CS"
+            ],
+            "event-4",
+            "Machine Learning",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "CSMIA19",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G45",
+            "Dr Hong Wei",
+            [
+                "PG-CS"
+            ],
+            "event-7",
+            "Image Analysis",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR65",
+            "15:0",
+            "16:0",
+            "HENLEY-G13",
+            "Prof Yinshan Tang",
+            [
+                "PG-IM&DB"
+            ],
+            "event-13",
+            "IT Project Management",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "MA1LA",
+            "17:0",
+            "18:0",
+            "PALMER-110",
+            "Prof Paul Glaister",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-14",
+            "Linear Algebra",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA2RCA",
+            "17:0",
+            "18:0",
+            "PALMER-109",
+            "Dr Titus Hilberdink",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-19",
+            "Real and Complex Analysis",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA2MPR",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Dr Peter Sweby",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-20",
+            "Mathematical Programming",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "CS3DS19",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G40",
+            "Prof Giuseppe Di Fatta",
+            [
+                "BSc-CS-Y3"
+            ],
+            "event-26",
+            "Data Science Algorithms and Tools",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "FRIDAY": [
+        [
+            "CS3VI18",
+            "14:0",
+            "15:0",
+            "PALMER-109",
+            "Prof James Ferryman",
+            [
+                "PG-CS",
+                "BSc-CS-Y3"
+            ],
+            "event-5",
+            "Visual Intelligence",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR89",
+            "15:0",
+            "16:0",
+            "HENLEY-G10",
+            "Prof Keiichi Nakata",
+            [
+                "PG-IM&DB"
+            ],
+            "event-9",
+            "Big Data in Business",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "MA1FM",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Dr Jani Virtanen",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-15",
+            "Foundations of Mathematics",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA2MPR",
+            "17:0",
+            "18:0",
+            "PALMER-110",
+            "Dr Peter Sweby",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-20",
+            "Mathematical Programming",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "MA2NAN",
+            "14:0",
+            "15:0",
+            "POLLY-VACHER-G45",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-21",
+            "Numerical Analysis",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "MA2DE",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G45",
+            "Dr Peter Sweby",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-22",
+            "Differential Equations",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "CS3DS19",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G40",
+            "Prof Giuseppe Di Fatta",
+            [
+                "BSc-CS-Y3"
+            ],
+            "event-26",
+            "Data Science Algorithms and Tools",
+            [
+                "Spring"
+            ]
+        ]
+    ]
+}
