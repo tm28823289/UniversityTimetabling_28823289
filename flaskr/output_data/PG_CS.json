@@ -1,6 +1,55 @@
 {
     "MONDAY": [
         [
+            "CS3AI18-CSMAI19",
+            "8:0",
+            "10:0",
+            "POLLY-VACHER-G50",
+            "Dr Varun Ojha",
+            [
+                "PG-CS",
+                "BSc-CS-Y3"
+            ],
+            "event-1",
+            "Artificial Intelligence",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "CSMML16",
+            "14:0",
+            "15:0",
+            "POLLY-VACHER-G56",
+            "Prof Richard Mitchell",
+            [
+                "PG-CS"
+            ],
+            "event-4",
+            "Machine Learning",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "CS3VR16",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G56",
+            "Prof Richard Mitchell",
+            [
+                "PG-CS",
+                "BSc-CS-Y3"
+            ],
+            "event-6",
+            "Virtual Reality",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "TUESDAY": [
+        [
             "MMM077",
             "16:0",
             "17:0",
@@ -17,42 +66,9 @@
             ]
         ],
         [
-            "CSMML16",
-            "15:0",
-            "16:0",
-            "POLLY-VACHER-G56",
-            "Prof Richard Mitchell",
-            [
-                "PG-CS"
-            ],
-            "event-4",
-            "Machine Learning",
-            [
-                "Spring"
-            ]
-        ]
-    ],
-    "TUESDAY": [
-        [
-            "MMM077",
-            "13:0",
-            "14:0",
-            "HENLEY-G09",
-            "Prof Michael Starkey",
-            [
-                "PG-CS",
-                "PG-IM&DB"
-            ],
-            "event-2",
-            "Digital Marketing",
-            [
-                "Spring"
-            ]
-        ],
-        [
             "CSMBD16",
-            "15:0",
-            "16:0",
+            "17:0",
+            "18:0",
             "POLLY-VACHER-G40",
             "Dr Mohammed Al-Khafajiy",
             [
@@ -63,7 +79,9 @@
             [
                 "Spring"
             ]
-        ],
+        ]
+    ],
+    "WEDNESDAY": [
         [
             "CSMIA19",
             "16:0",
@@ -80,48 +98,28 @@
             ]
         ]
     ],
-    "WEDNESDAY": [
-        [
-            "CS3VR16",
-            "13:0",
-            "14:0",
-            "PALMER-109",
-            "Prof Richard Mitchell",
-            [
-                "PG-CS",
-                "BSc-CS-Y3"
-            ],
-            "event-6",
-            "Virtual Reality",
-            [
-                "Spring"
-            ]
-        ]
-    ],
     "THURSDAY": [
         [
-            "CS3AI18-CSMAI19",
-            "10:0",
-            "12:0",
-            "POLLY-VACHER-G45",
-            "Dr Varun Ojha",
+            "MMM077",
+            "16:0",
+            "17:0",
+            "HENLEY-G09",
+            "Prof Michael Starkey",
             [
                 "PG-CS",
-                "BSc-CS-Y3"
+                "PG-IM&DB"
             ],
-            "event-1",
-            "Artificial Intelligence",
+            "event-2",
+            "Digital Marketing",
             [
                 "Spring"
             ]
-        ]
-    ],
-    "FRIDAY": [
+        ],
         [
             "CS3VI18",
-            "13:0",
-            "14:0",
-            "POLLY-VACHER-G56",
+            "17:0",
+            "18:0",
+            "PALMER-109",
             "Prof James Ferryman",
             [
                 "PG-CS",

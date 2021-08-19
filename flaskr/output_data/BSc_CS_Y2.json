@@ -1,9 +1,58 @@
 {
     "MONDAY": [
         [
-            "MA2MPR",
+            "MA2RCA",
+            "15:0",
             "16:0",
-            "17:0",
+            "PALMER-109",
+            "Dr Titus Hilberdink",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-19",
+            "Real and Complex Analysis",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "MA2NAN",
+            "14:0",
+            "15:0",
+            "POLLY-VACHER-G50",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-21",
+            "Numerical Analysis",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "CS2JA16",
+            "10:0",
+            "11:0",
+            "PALMER-110",
+            "Dr Varun Ojha",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-23",
+            "Java",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "TUESDAY": [
+        [
+            "MA2MPR",
+            "14:0",
+            "15:0",
             "PALMER-110",
             "Dr Peter Sweby",
             [
@@ -31,44 +80,10 @@
             ]
         ],
         [
-            "MA2DE",
-            "14:0",
-            "15:0",
-            "POLLY-VACHER-G45",
-            "Dr Peter Sweby",
-            [
-                "BSc-CS-Y2"
-            ],
-            "event-22",
-            "Differential Equations",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ],
-        [
             "CS2JA16",
             "9:0",
             "10:0",
-            "POLLY-VACHER-G40",
-            "Dr Varun Ojha",
-            [
-                "BSc-CS-Y2"
-            ],
-            "event-23",
-            "Java",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ]
-    ],
-    "TUESDAY": [
-        [
-            "CS2JA16",
-            "10:0",
-            "11:0",
-            "POLLY-VACHER-G40",
+            "PALMER-110",
             "Dr Varun Ojha",
             [
                 "BSc-CS-Y2"
@@ -82,9 +97,9 @@
         ],
         [
             "CS2AO17",
-            "9:0",
             "10:0",
-            "POLLY-VACHER-G50",
+            "11:0",
+            "POLLY-VACHER-G45",
             "PROF Xia Hong",
             [
                 "BSc-CS-Y2"
@@ -99,42 +114,24 @@
     ],
     "WEDNESDAY": [
         [
-            "MA2NAN",
-            "14:0",
+            "MA2MPR",
             "15:0",
-            "POLLY-VACHER-G50",
-            "Dr Peter Chamberlain",
+            "16:0",
+            "PALMER-110",
+            "Dr Peter Sweby",
             [
                 "BSc-CS-Y2"
             ],
-            "event-21",
-            "Numerical Analysis",
+            "event-20",
+            "Mathematical Programming",
             [
-                "Spring"
-            ]
-        ]
-    ],
-    "THURSDAY": [
-        [
-            "MA2RCA",
-            "13:0",
-            "14:0",
-            "POLLY-VACHER-G56",
-            "Dr Titus Hilberdink",
-            [
-                "BSc-CS-Y2"
-            ],
-            "event-19",
-            "Real and Complex Analysis",
-            [
-                "Autumn",
                 "Spring"
             ]
         ],
         [
             "MA2DE",
-            "15:0",
-            "16:0",
+            "10:0",
+            "11:0",
             "POLLY-VACHER-G45",
             "Dr Peter Sweby",
             [
@@ -148,19 +145,20 @@
             ]
         ]
     ],
-    "FRIDAY": [
+    "THURSDAY": [
         [
-            "MA2MPR",
-            "13:0",
-            "14:0",
-            "POLLY-VACHER-G40",
+            "MA2DE",
+            "10:0",
+            "11:0",
+            "POLLY-VACHER-G45",
             "Dr Peter Sweby",
             [
                 "BSc-CS-Y2"
             ],
-            "event-20",
-            "Mathematical Programming",
+            "event-22",
+            "Differential Equations",
             [
+                "Autumn",
                 "Spring"
             ]
         ]

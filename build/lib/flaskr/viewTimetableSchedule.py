@@ -74,7 +74,7 @@ def INMR86():
 
 @bp.route("/INMR96.html")
 def INMR96():
-    return render_template('INMR96.html', data_dict=final_data)
+    return render_template('viewData/INMR96.html', data_dict=final_data)
 
 @bp.route("/INMR65.html")
 def INMR65():

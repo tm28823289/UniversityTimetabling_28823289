@@ -2,8 +2,8 @@
     "MONDAY": [
         [
             "MA1LA",
+            "15:0",
             "16:0",
-            "17:0",
             "POLLY-VACHER-G40",
             "Prof Paul Glaister",
             [
@@ -17,9 +17,59 @@
             ]
         ],
         [
+            "MA1CA",
+            "16:0",
+            "17:0",
+            "PALMER-109",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-16",
+            "Calculus",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
             "CS1FC16",
-            "13:0",
             "14:0",
+            "15:0",
+            "PALMER-110",
+            "Dr Hong Wei",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-17",
+            "Fundamentals of Computer Science",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "TUESDAY": [
+        [
+            "MA1LA",
+            "17:0",
+            "18:0",
+            "PALMER-110",
+            "Prof Paul Glaister",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-14",
+            "Linear Algebra",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "CS1FC16",
+            "16:0",
+            "17:0",
             "PALMER-110",
             "Dr Hong Wei",
             [
@@ -49,84 +99,18 @@
             ]
         ]
     ],
-    "TUESDAY": [
-        [
-            "MA1LA",
-            "14:0",
-            "15:0",
-            "PALMER-110",
-            "Prof Paul Glaister",
-            [
-                "BSc-CS-Y1"
-            ],
-            "event-14",
-            "Linear Algebra",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ],
-        [
-            "MA1FM",
-            "16:0",
-            "17:0",
-            "PALMER-110",
-            "Dr Jani Virtanen",
-            [
-                "BSc-CS-Y1"
-            ],
-            "event-15",
-            "Foundations of Mathematics",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ],
-        [
-            "CS1FC16",
-            "13:0",
-            "14:0",
-            "PALMER-110",
-            "Dr Hong Wei",
-            [
-                "BSc-CS-Y1"
-            ],
-            "event-17",
-            "Fundamentals of Computer Science",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ]
-    ],
     "WEDNESDAY": [
         [
             "MA1FM",
             "16:0",
             "17:0",
-            "POLLY-VACHER-G40",
+            "PALMER-110",
             "Dr Jani Virtanen",
             [
                 "BSc-CS-Y1"
             ],
             "event-15",
             "Foundations of Mathematics",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ],
-        [
-            "MA1CA",
-            "15:0",
-            "16:0",
-            "POLLY-VACHER-G56",
-            "Dr Peter Chamberlain",
-            [
-                "BSc-CS-Y1"
-            ],
-            "event-16",
-            "Calculus",
             [
                 "Autumn",
                 "Spring"
@@ -135,10 +119,26 @@
     ],
     "FRIDAY": [
         [
+            "MA1FM",
+            "16:0",
+            "17:0",
+            "PALMER-110",
+            "Dr Jani Virtanen",
+            [
+                "BSc-CS-Y1"
+            ],
+            "event-15",
+            "Foundations of Mathematics",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
             "MA1CA",
             "15:0",
             "16:0",
-            "POLLY-VACHER-G56",
+            "PALMER-109",
             "Dr Peter Chamberlain",
             [
                 "BSc-CS-Y1"
