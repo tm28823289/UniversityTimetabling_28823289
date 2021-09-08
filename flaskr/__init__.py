@@ -2,9 +2,16 @@ import os
 from flask import Flask
 from . import db
 from . import auth
+from . import homepage
+from . import landingpage
 from . import selecttimeterm
 from . import modifySpringTermData
 from . import modifyAutumnTermData
+from . import insertdata
+from . import classrooms
+from . import addclassrooms
+from . import teachers
+from . import addfacultypreferences
 from . import z3scheduler
 from . import viewTimetableSchedule
 from z3 import *
@@ -35,11 +42,32 @@ def create_app(test_config=None):
     db.init_app(app)
 
     app.register_blueprint(auth.bp)
-    
+
+    app.register_blueprint(homepage.bp)
+    app.add_url_rule('/', endpoint='auth.login')
+
+    app.register_blueprint(landingpage.bp)
+    app.add_url_rule('/landingpage', endpoint='landingpage')
+
     app.register_blueprint(selecttimeterm.bp)
-    app.add_url_rule('/', endpoint='modifyInputData.selecttimeterm.selecttimeterm')
+    app.add_url_rule('/selecttimeterm', endpoint='modifyInputData.selecttimeterm.selecttimeterm')
     app.add_url_rule('/selecttermdata', endpoint='modifyInputData.selecttimeterm.selecttermdata')
     
+    app.register_blueprint(insertdata.bp)
+    app.add_url_rule('/insertdata', endpoint='insertData.insertData')
+
+    app.register_blueprint(classrooms.bp)
+    app.add_url_rule('/classrooms', endpoint='insertData.classrooms')
+    
+    app.register_blueprint(addclassrooms.bp)
+    app.add_url_rule('/addclassrooms', endpoint='insertData.addclassrooms')
+
+    app.register_blueprint(teachers.bp)
+    app.add_url_rule('/teachers', endpoint='insertData.teachers')
+
+    app.register_blueprint(addfacultypreferences.bp)
+    app.add_url_rule('/addfacultypreferences', endpoint='insertData.addfacultypreferences')
+
     app.register_blueprint(modifySpringTermData.bp)
     app.add_url_rule('/CS3AI18-CSMAI19', endpoint='modifyInputData.modifyspringtermdata.CS3AI18-CSMAI19')
     app.add_url_rule('/MMM077', endpoint='modifyInputData.modifyspringtermdata.MMM077')
@@ -125,5 +153,6 @@ def create_app(test_config=None):
     app.add_url_rule('/MA2VC.html', endpoint='viewData.MA2VC.html')
     app.add_url_rule('/MA2PSM.html', endpoint='viewData.MA2PSM.html')
     app.add_url_rule('/CS3DP19.html', endpoint='viewData.CS3DP19.html')
+    app.add_url_rule('/MIS16.html', endpoint='viewData.MIS16.html')
 
     return app

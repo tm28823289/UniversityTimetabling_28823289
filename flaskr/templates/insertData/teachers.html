@@ -1,0 +1,103 @@
+  <title>UniTimetabling Project</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Solving timetabling constraints using Z3Py solver">
+        <meta name="author" content="Satishkumar Pillai">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='UoR-Favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <nav>
+    <h1>University Timetabling</h1>
+      <ul>
+        {% if g.user %}
+          <li><span>{{ g.user['username'] }}</span>
+          <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+        {% else %}
+          <li><a href="{{ url_for('auth.register') }}">Register</a>
+          <li><a href="{{ url_for('auth.login') }}">Log In</a>
+        {% endif %}
+      </ul>
+  </nav>
+  
+</head>
+<body>
+  <div class="tableselector">
+    <form class ="drop-down" method="POST" action="#">
+      <table class="center">
+        <caption><h2>Teaching Faculty Time Preference Information</h2></caption>
+          <tr>
+            <th>Teaching Faculty Name</th>
+            <th>Non-time preference</th>
+          </tr>
+            {% for key in dataTerm.keys() %}
+              {% if key == 'Lecture_time not prefered' %}
+                {% for n in range(dataTerm[key]| length) %}
+                  <tr>
+                    <td style="color:blue; cursor:pointer;" onclick="location.href='{{dataTerm[key][n][0]}}'">{{dataTerm[key][n][0]}}</td>
+                    <td>{{dataTerm[key][n][1]}}</td>
+                  </tr>
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+      </table>
+      <br>
+    </form>
+  </div>
+
+  <div class="tableselector">
+    <form class ="drop-down" method="POST" action="#">
+      <table class="center">
+        <caption><h2>Teaching Faculty Room Preference Information</h2></caption>
+          <tr>
+            <th>Teaching Faculty Name</th>
+            <th>Non-room preference</th>
+          </tr>
+            {% for key in dataTerm.keys() %}
+              {% if key == 'Lecture rooms not prefered by teaching faculty' %}
+                {% for n in range(dataTerm[key]| length) %}
+                  <tr>
+                    <td style="color:blue; cursor:pointer;" onclick="location.href='{{dataTerm[key][n][0]}}'">{{dataTerm[key][n][0]}}</td>
+                    <td>{{dataTerm[key][n][1]}}</td>
+                  </tr>
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+      </table>
+      <br>
+    </form>
+  </div>
+
+  <div class="tableselector">
+    <form class ="drop-down" method="POST" action="#">
+      <table class="center">
+        <caption><h2>Teaching Faculty Room Preference Information</h2></caption>
+          <tr>
+            <th>Teaching Faculty Name</th>
+            <th>Non-day preference</th>
+          </tr>
+            {% for key in dataTerm.keys() %}
+              {% if key == 'Teaching days not prefered by teaching faculty' %}
+                {% for n in range(dataTerm[key]| length) %}
+                  <tr>
+                    <td style="color:blue; cursor:pointer;" onclick="location.href='{{dataTerm[key][n][0]}}'">{{dataTerm[key][n][0]}}</td>
+                    <td>{{dataTerm[key][n][1]}}</td>
+                  </tr>
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+      </table>
+      <br>
+    </form>
+  </div>
+
+  <form method="GET, POST">
+    <div class="buttons">
+      <div class="action_btn">
+        <button name="submit" class="action_btn submit" type="submit" value="Back" formaction="/landingpage">Back</button>
+        <button name="submit" class="action_btn submit" type="submit" value="Schedule Timetable" formaction="/run-z3solver">Schedule Timetable</button>
+        <button name="submit" class="action_btn submit" type="submit" value="Insert Data" formaction="/addfacultypreferences">Insert Data</button>
+
+  </form>
+  <br><br>
+  
+
+    

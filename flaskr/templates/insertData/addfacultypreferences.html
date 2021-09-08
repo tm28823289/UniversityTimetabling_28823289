@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en-UK">
+<head>
+  <title>UniTimetabling Project</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Solving timetabling constraints using Z3Py solver">
+        <meta name="author" content="Satishkumar Pillai">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='UoR-Favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <nav>
+    <h1>University Timetabling</h1>
+      <ul>
+        {% if g.user %}
+          <li><span>{{ g.user['username'] }}</span>
+          <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+        {% else %}
+          <li><a href="{{ url_for('auth.register') }}">Register</a>
+          <li><a href="{{ url_for('auth.login') }}">Log In</a>
+        {% endif %}
+      </ul>
+  </nav>
+   
+</head>
+<body>
+  <form method="POST" action="/addfacultypreferences">
+    <br>
+  <p><label>Faculty Name: <input id="teachername" type="text" name="teachername" value="{{ teachername }}" required></label></p>
+  
+  <div class="timeselector">
+    <p>Select Non-preference Start Time<span class="required">*</span></p>
+      <div class="uni-time">
+        <select name="facultyStartTime" id="facultyStartTime">
+          <option value="">None</option>
+            <optgroup label="Non Preference StartTime">
+              <option value="8.00">8.00</option>
+              <option value="9.00">9.00</option>
+              <option value="10.00">10.00</option>
+              <option value="11.00">11.00</option>
+              <option value="12.00">12.00</option>
+              <option value="13.00">13.00</option>
+              <option value="14.00">14.00</option>
+              <option value="15.00">15.00</option>
+              <option value="16.00">16.00</option>
+              <option value="17.00">17.00</option>
+              <option value="18.00">18.00</option>    
+            </optgroup>
+        </select>
+      </div>
+    <p>Select Non-preference End Time<span class="required">*</span></p>
+      <div class="uni-time">
+        <select name="facultyEndTime" id="facultyEndTime">
+          <option value="">None</option>
+            <optgroup label="Non Preference EndTime">
+              <option value="8.00">8.00</option>
+              <option value="9.00">9.00</option>
+              <option value="10.00">10.00</option>
+              <option value="11.00">11.00</option>
+              <option value="12.00">12.00</option>
+              <option value="13.00">13.00</option>
+              <option value="14.00">14.00</option>
+              <option value="15.00">15.00</option>
+              <option value="16.00">16.00</option>
+              <option value="17.00">17.00</option>
+              <option value="18.00">18.00</option>
+            </optgroup>
+        </select>
+      </div>
+      <p>Select Non-preference Classrooms<span class="required">*</span></p>
+        <div class="uni-term">
+          <select name="classroom" id="classroom">
+            <option value="">None</option>
+            <option name="PALMER-109" value="PALMER-109">PALMER-109</option>
+            <option name="PALMER-110" value="PALMER-110">PALMER-110</option>
+            <option name="POLLY-VACHER-G45" value="POLLY-VACHER-G45">POLLY-VACHER-G45</option>
+            <option name="POLLY-VACHER-G56" value="POLLY-VACHER-G56">POLLY-VACHER-G56</option>
+            <option name="POLLY-VACHER-G50" value="POLLY-VACHER-G50">POLLY-VACHER-G50</option>
+            <option name="POLLY-VACHER-G40" value="POLLY-VACHER-G40">POLLY-VACHER-G40</option>
+            <option name="HENLEY-G09" value="HENLEY-G09">HENLEY-G09</option>
+            <option name="HENLEY-G10" value="HENLEY-G10">HENLEY-G10</option>
+            <option name="HENLEY-G11" value="HENLEY-G11">HENLEY-G11</option>
+            <option name="HENLEY-G12" value="HENLEY-G12">HENLEY-G12</option>
+            <option name="HENLEY-G13" value="HENLEY-G13">HENLEY-G13</option>
+            <option name="HENLEY-G14" value="HENLEY-G14">HENLEY-G14</option>
+          </select>
+        </div>
+        <p>Select Non-preference Days<span class="required">*</span></p>
+        <div class="uni-term">
+          <select name="days" id="days">
+            <option value="">None</option>
+            <option name="Monday" value="Monday">Monday</option>
+            <option name="Tuesday" value="Tuesday">Tuesday</option>
+            <option name="Wednesday" value="Wednesday">Wednesday</option>
+            <option name="Thursday" value="Thursday">Thursday</option>
+            <option name="Friday" value="Friday">Friday</option>
+          </select>
+        </div>
+      <br>
+        <div class="buttons">
+            <div class="action_btn">
+              <button name="submit" class="action_btn submit" type="submit" value="Save" formaction="/addfacultypreferences">Save</button>
+              <br><br>
+            </div>
+        </div>    
+      </div>
+    </form>
+  </div>
+    <form method="GET, POST">
+    <div class="buttons">
+      <div class="action_btn">
+        <button name="submit" class="action_btn submit" type="submit" value="Back" formaction="/teachers">Back</button>        
+</form>
+<br><br>
+  
+
+    

@@ -8,7 +8,7 @@ import json
 
 bp = Blueprint('selecttimeterm', __name__)
 
-@bp.route('/', methods=('GET', 'POST'))
+@bp.route('/selecttimeterm', methods=('GET', 'POST'))
 def selecttimeterm():
     return render_template('modifyInputData/selecttimeterm/selecttimeterm.html')
     

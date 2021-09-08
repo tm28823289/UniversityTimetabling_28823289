@@ -175,3 +175,7 @@ def MA2PSM():
 @bp.route("/CS3DP19.html")
 def CS3DP19():
     return render_template('viewData/CS3DP19.html', data_dict=final_data)
+
+@bp.route("/MIS16.html")
+def MIS16():
+    return render_template('viewData/MIS16.html', data_dict=final_data)

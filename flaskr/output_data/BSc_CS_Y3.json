@@ -1,9 +1,79 @@
 {
-    "MONDAY": [
+    "Monday": [
+        [
+            "CS3VI18",
+            "17:0",
+            "18:0",
+            "PALMER-110",
+            "Prof James Ferryman",
+            [
+                "PG-CS",
+                "BSc-CS-Y3"
+            ],
+            "event-5",
+            "Visual Intelligence",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "MA3NAT",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Dr Amos Lawless",
+            [
+                "BSc-CS-Y3"
+            ],
+            "event-25",
+            "Numerical Analysis II",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "Tuesday": [
+        [
+            "MA3NAT",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Dr Amos Lawless",
+            [
+                "BSc-CS-Y3"
+            ],
+            "event-25",
+            "Numerical Analysis II",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ]
+    ],
+    "Thursday": [
+        [
+            "CS3VI18",
+            "15:0",
+            "16:0",
+            "PALMER-110",
+            "Prof James Ferryman",
+            [
+                "PG-CS",
+                "BSc-CS-Y3"
+            ],
+            "event-5",
+            "Visual Intelligence",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "Friday": [
         [
             "CS3AI18-CSMAI19",
-            "8:0",
-            "10:0",
+            "9:0",
+            "11:0",
             "POLLY-VACHER-G50",
             "Dr Varun Ojha",
             [
@@ -20,7 +90,7 @@
             "CS3VR16",
             "15:0",
             "16:0",
-            "POLLY-VACHER-G56",
+            "POLLY-VACHER-G40",
             "Prof Richard Mitchell",
             [
                 "PG-CS",
@@ -31,65 +101,12 @@
             [
                 "Spring"
             ]
-        ]
-    ],
-    "WEDNESDAY": [
-        [
-            "MA3NAT",
-            "9:0",
-            "11:0",
-            "POLLY-VACHER-G56",
-            "Dr Amos Lawless",
-            [
-                "BSc-CS-Y3"
-            ],
-            "event-25",
-            "Numerical Analysis II",
-            [
-                "Autumn",
-                "Spring"
-            ]
-        ]
-    ],
-    "THURSDAY": [
-        [
-            "CS3VI18",
-            "17:0",
-            "18:0",
-            "PALMER-109",
-            "Prof James Ferryman",
-            [
-                "PG-CS",
-                "BSc-CS-Y3"
-            ],
-            "event-5",
-            "Visual Intelligence",
-            [
-                "Spring"
-            ]
         ],
         [
             "CS3DS19",
-            "10:0",
             "11:0",
-            "POLLY-VACHER-G40",
-            "Prof Giuseppe Di Fatta",
-            [
-                "BSc-CS-Y3"
-            ],
-            "event-26",
-            "Data Science Algorithms and Tools",
-            [
-                "Spring"
-            ]
-        ]
-    ],
-    "FRIDAY": [
-        [
-            "CS3DS19",
-            "10:0",
-            "11:0",
-            "POLLY-VACHER-G40",
+            "12:0",
+            "POLLY-VACHER-G56",
             "Prof Giuseppe Di Fatta",
             [
                 "BSc-CS-Y3"

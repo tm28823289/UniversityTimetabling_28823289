@@ -1,6 +1,3 @@
-<!doctype html>
-<html lang="en-UK">
-<head>
   <title>UniTimetabling Project</title>
         <meta charset="UTF-8">
         <meta name="description" content="Solving timetabling constraints using Z3Py solver">
@@ -26,29 +23,17 @@
   <div class="tableselector">
     <form class ="drop-down" method="POST" action="#">
       <table class="center">
-        <caption><h2>Timetabling Lecture Information</h2></caption>
+        <caption><h2>Classroom Information</h2></caption>
           <tr>
-            <th>Module Code</th>
-            <th>Module Name</th>
-            <th>Module Convenor</th>
-            <th>Module Batch</th>
-            <th>Module Term</th>
-            <th>Lecture Room Capacity</th>
-            <th>Lecture Duration (in mins)</th>
-            <th>Lecture Frequency (per week)</th>
+            <th>Classroom Name</th>
+            <th>Classroom Capacity</th>
           </tr>
             {% for key in dataTerm.keys() %}
-              {% if key == 'Modules' %}
+              {% if key == 'Lecturerooms' %}
                 {% for n in range(dataTerm[key]| length) %}
                   <tr>
                     <td style="color:blue; cursor:pointer;" onclick="location.href='{{dataTerm[key][n][0]}}'">{{dataTerm[key][n][0]}}</td>
-                    <td>{{dataTerm[key][n][5]}}</td>
-                    <td>{{dataTerm[key][n][3]}}</td>
-                    <td>{{dataTerm[key][n][4]}}</td>
-                    <td>{{dataTerm[key][n][6]}}</td>
                     <td>{{dataTerm[key][n][1]}}</td>
-                    <td>{{dataTerm[key][n][2][0]}}</td>
-                    <td>{{dataTerm[key][n][2] | length}}</td>
                   </tr>
                 {% endfor %}
               {% endif %}
@@ -58,17 +43,15 @@
     </form>
   </div>
 
-  <!-- <form method="GET" action="/run-z3solver">
-		<button type="submit">Schedule Timetable</button>
-	</form> -->
-
   <form method="GET, POST">
     <div class="buttons">
       <div class="action_btn">
         <button name="submit" class="action_btn submit" type="submit" value="Back" formaction="/landingpage">Back</button>
         <button name="submit" class="action_btn submit" type="submit" value="Schedule Timetable" formaction="/run-z3solver">Schedule Timetable</button>
-        <button name="submit" class="action_btn submit" type="submit" value="Insert Data" formaction="/insertData">Insert Data</button>
+        <button name="submit" class="action_btn submit" type="submit" value="Insert Data" formaction="/addclassrooms">Insert Data</button>
 
   </form>
-
   <br><br>
+  
+
+    

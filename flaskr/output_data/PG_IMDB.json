@@ -1,10 +1,105 @@
 {
-    "MONDAY": [
+    "Monday": [
+        [
+            "MMM077",
+            "11:0",
+            "12:0",
+            "HENLEY-G11",
+            "Prof Michael Starkey",
+            [
+                "PG-CS",
+                "PG-IM&DB"
+            ],
+            "event-2",
+            "Digital Marketing",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR77",
+            "12:0",
+            "13:0",
+            "HENLEY-G11",
+            "Dr Yin Leng Tan",
+            [
+                "PG-IM&DB"
+            ],
+            "event-10",
+            "Business Intelligence and Data Mining",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR96",
+            "15:0",
+            "16:0",
+            "HENLEY-G13",
+            "Dr Vicky Weizi Li",
+            [
+                "PG-IM&DB"
+            ],
+            "event-12",
+            "Digital Health and Data Analytics",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "Tuesday": [
+        [
+            "INMR89",
+            "17:0",
+            "18:0",
+            "NEWROOM-01",
+            "Prof Keiichi Nakata",
+            [
+                "PG-IM&DB"
+            ],
+            "event-9",
+            "Big Data in Business",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR96",
+            "11:0",
+            "12:0",
+            "HENLEY-G13",
+            "Dr Vicky Weizi Li",
+            [
+                "PG-IM&DB"
+            ],
+            "event-12",
+            "Digital Health and Data Analytics",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "MIS16",
+            "15:0",
+            "16:0",
+            "NEWROOM-01",
+            "Dr Satish",
+            [
+                "PG-CS, PG-IM&DB"
+            ],
+            "event-27",
+            "Social Science",
+            [
+                "Autumn, Spring"
+            ]
+        ]
+    ],
+    "Wednesday": [
         [
             "INMR93",
-            "10:0",
             "11:0",
-            "HENLEY-G13",
+            "12:0",
+            "HENLEY-G09",
             "Dr Yin Leng Tan",
             [
                 "PG-IM&DB"
@@ -16,25 +111,57 @@
             ]
         ],
         [
-            "INMR89",
-            "15:0",
-            "17:0",
+            "INMR86",
+            "12:0",
+            "13:0",
             "HENLEY-G09",
-            "Prof Keiichi Nakata",
+            "Dr Vaughan Michell",
             [
                 "PG-IM&DB"
             ],
-            "event-9",
-            "Big Data in Business",
+            "event-11",
+            "Business Technology Consulting",
+            [
+                "Spring"
+            ]
+        ]
+    ],
+    "Thursday": [
+        [
+            "INMR93",
+            "11:0",
+            "12:0",
+            "HENLEY-G09",
+            "Dr Yin Leng Tan",
+            [
+                "PG-IM&DB"
+            ],
+            "event-8",
+            "Digital Innovation",
+            [
+                "Spring"
+            ]
+        ],
+        [
+            "INMR86",
+            "12:0",
+            "13:0",
+            "HENLEY-G10",
+            "Dr Vaughan Michell",
+            [
+                "PG-IM&DB"
+            ],
+            "event-11",
+            "Business Technology Consulting",
             [
                 "Spring"
             ]
         ],
         [
             "INMR65",
-            "14:0",
-            "15:0",
-            "HENLEY-G13",
+            "17:0",
+            "18:0",
+            "HENLEY-G09",
             "Prof Yinshan Tang",
             [
                 "PG-IM&DB"
@@ -44,91 +171,44 @@
             [
                 "Spring"
             ]
+        ],
+        [
+            "MIS16",
+            "15:0",
+            "16:0",
+            "PALMER-109",
+            "Dr Satish",
+            [
+                "PG-CS, PG-IM&DB"
+            ],
+            "event-27",
+            "Social Science",
+            [
+                "Autumn, Spring"
+            ]
         ]
     ],
-    "TUESDAY": [
+    "Friday": [
         [
             "MMM077",
-            "16:0",
             "17:0",
-            "HENLEY-G09",
-            "Prof Michael Starkey",
-            [
-                "PG-CS",
-                "PG-IM&DB"
-            ],
-            "event-2",
-            "Digital Marketing",
-            [
-                "Spring"
-            ]
-        ],
-        [
-            "INMR77",
-            "10:0",
-            "11:0",
-            "HENLEY-G11",
-            "Dr Yin Leng Tan",
-            [
-                "PG-IM&DB"
-            ],
-            "event-10",
-            "Business Intelligence and Data Mining",
-            [
-                "Spring"
-            ]
-        ],
-        [
-            "INMR86",
-            "15:0",
-            "16:0",
-            "HENLEY-G09",
-            "Dr Vaughan Michell",
-            [
-                "PG-IM&DB"
-            ],
-            "event-11",
-            "Business Technology Consulting",
-            [
-                "Spring"
-            ]
-        ],
-        [
-            "INMR96",
-            "14:0",
-            "15:0",
-            "HENLEY-G13",
-            "Dr Vicky Weizi Li",
-            [
-                "PG-IM&DB"
-            ],
-            "event-12",
-            "Digital Health and Data Analytics",
-            [
-                "Spring"
-            ]
-        ]
-    ],
-    "WEDNESDAY": [
-        [
-            "INMR89",
-            "16:0",
             "18:0",
-            "HENLEY-G09",
-            "Prof Keiichi Nakata",
+            "HENLEY-G11",
+            "Prof Michael Starkey",
             [
+                "PG-CS",
                 "PG-IM&DB"
             ],
-            "event-9",
-            "Big Data in Business",
+            "event-2",
+            "Digital Marketing",
             [
                 "Spring"
             ]
         ],
         [
             "INMR77",
+            "9:0",
             "10:0",
-            "11:0",
             "HENLEY-G11",
             "Dr Yin Leng Tan",
             [
@@ -141,51 +221,16 @@
             ]
         ],
         [
-            "INMR86",
-            "14:0",
-            "15:0",
+            "INMR65",
+            "11:0",
+            "12:0",
             "HENLEY-G09",
-            "Dr Vaughan Michell",
+            "Prof Yinshan Tang",
             [
                 "PG-IM&DB"
             ],
-            "event-11",
-            "Business Technology Consulting",
-            [
-                "Spring"
-            ]
-        ]
-    ],
-    "THURSDAY": [
-        [
-            "MMM077",
-            "16:0",
-            "17:0",
-            "HENLEY-G09",
-            "Prof Michael Starkey",
-            [
-                "PG-CS",
-                "PG-IM&DB"
-            ],
-            "event-2",
-            "Digital Marketing",
-            [
-                "Spring"
-            ]
-        ]
-    ],
-    "FRIDAY": [
-        [
-            "INMR96",
-            "16:0",
-            "17:0",
-            "HENLEY-G13",
-            "Dr Vicky Weizi Li",
-            [
-                "PG-IM&DB"
-            ],
-            "event-12",
-            "Digital Health and Data Analytics",
+            "event-13",
+            "IT Project Management",
             [
                 "Spring"
             ]

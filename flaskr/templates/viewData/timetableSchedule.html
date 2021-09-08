@@ -180,6 +180,14 @@
     <!-- <input class="drop-down" type="submit" value="Submit"> -->
     <button type="submit" class="btn-primary">Submit</button>
   </form>
+  <br>
+  <form method="GET, POST">
+    <div class="buttons">
+      <div class="action_btn">
+        <button name="submit" class="action_btn submit" type="submit" value="Back" formaction="/landingpage">Back</button>
+      </div>
+  </form>
+
 
  <div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">
     <div class="cd-schedule__timeline">
@@ -215,7 +223,7 @@
           <ul>
               {% for key in data_dict.keys() %}
                 {% for n in range(data_dict[key]| length) %}
-                  {% if key == 'MONDAY' %}
+                  {% if key == 'Monday' %}
                     <li class="cd-schedule__event">
                       <a data-start={{data_dict[key][n][1]}} data-end={{data_dict[key][n][2]}} data-content={{data_dict[key][n][0]}} data-event={{data_dict[key][n][6]}} href="#0">
                         <em class="cd-schedule__name">{{data_dict[key][n][0]}}</em>
@@ -232,7 +240,7 @@
           <ul>
               {% for key in data_dict.keys() %}
                 {% for n in range(data_dict[key]| length) %}
-                  {% if key == 'TUESDAY' %}
+                  {% if key == 'Tuesday' %}
                     <li class="cd-schedule__event">
                       <a data-start={{data_dict[key][n][1]}} data-end={{data_dict[key][n][2]}} data-content={{data_dict[key][n][0]}} data-event={{data_dict[key][n][6]}} href="#0">
                         <em class="cd-schedule__name">{{data_dict[key][n][0]}}</em>
@@ -249,7 +257,7 @@
           <ul>
               {% for key in data_dict.keys() %}
                 {% for n in range(data_dict[key]| length) %}
-                  {% if key == 'WEDNESDAY' %}
+                  {% if key == 'Wednesday' %}
                     <li class="cd-schedule__event">
                       <a data-start={{data_dict[key][n][1]}} data-end={{data_dict[key][n][2]}} data-content={{data_dict[key][n][0]}} data-event={{data_dict[key][n][6]}} href="#0">
                         <em class="cd-schedule__name">{{data_dict[key][n][0]}}</em>
@@ -266,7 +274,7 @@
           <ul>
               {% for key in data_dict.keys() %}
                 {% for n in range(data_dict[key]| length) %}
-                  {% if key == 'THURSDAY' %}
+                  {% if key == 'Thursday' %}
                     <li class="cd-schedule__event">
                       <a data-start={{data_dict[key][n][1]}} data-end={{data_dict[key][n][2]}} data-content={{data_dict[key][n][0]}} data-event={{data_dict[key][n][6]}} href="#0">
                         <em class="cd-schedule__name">{{data_dict[key][n][0]}}</em>
@@ -283,7 +291,7 @@
           <ul>
               {% for key in data_dict.keys() %}
                 {% for n in range(data_dict[key]| length) %}
-                  {% if key == 'FRIDAY' %}
+                  {% if key == 'Friday' %}
                     <li class="cd-schedule__event">
                       <a data-start={{data_dict[key][n][1]}} data-end={{data_dict[key][n][2]}} data-content={{data_dict[key][n][0]}} data-event={{data_dict[key][n][6]}} href="#0">
                         <em class="cd-schedule__name">{{data_dict[key][n][0]}}</em>
@@ -295,7 +303,7 @@
           </ul>
         </li>
     </div>
-  
+      
     <div class="cd-schedule-modal">
       <header class="cd-schedule-modal__header">
         <div class="cd-schedule-modal__content">

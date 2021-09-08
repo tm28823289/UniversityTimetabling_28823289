@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-UK">
+<head>
+  <title>UniTimetabling Project</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Solving timetabling constraints using Z3Py solver">
+        <meta name="author" content="Satishkumar Pillai">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='UoR-Favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <nav>
+    <h1>University Timetabling</h1>
+      <ul>
+        {% if g.user %}
+          <li><span>{{ g.user['username'] }}</span>
+          <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+        {% else %}
+          <li><a href="{{ url_for('auth.register') }}">Register</a>
+          <li><a href="{{ url_for('auth.login') }}">Log In</a>
+        {% endif %}
+      </ul>
+  </nav>
+  
+</head>
+<body>
+  <br><br>
+
+  <a href="http://127.0.0.1:5000/selecttimeterm">
+  <img src="{{url_for('static', filename='chooseterm.jpg')}}" alt="Chooseterm" style="style="float:left;width:180px;height:180px;>
+  </a>
+
+  <a href="http://127.0.0.1:5000/selecttermdata">
+  <img src="{{url_for('static', filename='subjects.jpg')}}" alt="Subjects" style="style="float:right;width:180px;height:180px;>
+  </a>
+
+  <a href="http://127.0.0.1:5000/classrooms">
+  <img src="{{url_for('static', filename='rooms.JPG')}}" alt="Addrooms" style="style="float:right;width:180px;height:180px;>
+  </a>
+
+  <a href="http://127.0.0.1:5000/teachers">
+  <img src="{{url_for('static', filename='teachers.JPG')}}" alt="Teachers" style="style="float:right;width:180px;height:180px;>
+  </a>
+
+  <a href="http://127.0.0.1:5000/run-z3solver">
+  <img src="{{url_for('static', filename='Classes.JPG')}}" alt="z3scheduler" style="style="float:right;width:180px;height:180px;>
+  </a>
+
+  <br><br>
+  
+</body>  

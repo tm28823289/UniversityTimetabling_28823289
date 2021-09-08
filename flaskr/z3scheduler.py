@@ -15,21 +15,15 @@ def runz3Solver():
         # reading and parsing JSON inputdata into python dictionary
         with open('flaskr/input_data/mainfile.json') as f:
             uniTimetable_data = json.load(f) 
-        # new dictionary addition for mapping weekdays 
-        days_dict = {
-            0: "MONDAY",
-            1: "TUESDAY",
-            2: "WEDNESDAY",
-            3: "THURSDAY",
-            4: "FRIDAY"
-        }
-
+        
         # unpacking dictionary values into python list variables for ease of further processing  
         University_TimeSlot = uniTimetable_data['University time']
+        University_Days = uniTimetable_data['University teachingdays']
         Lecture_Rooms = uniTimetable_data['Lecturerooms']
         Lectures = uniTimetable_data['Modules']
         LectureTime_nonPref = uniTimetable_data['Lecture_time not prefered']
         LectureRooms_nonPref = uniTimetable_data['Lecture rooms not prefered by teaching faculty']
+        TeachingDay_nonPref = uniTimetable_data['Teaching days not prefered by teaching faculty']
 
         Modules = []  #list for storing module names
         Duration = [] #list for storing lecture duration
@@ -40,9 +34,13 @@ def runz3Solver():
             Modules.append(i[0])
             Duration.append(i[2])
             Term.append(i[6])
+        
         for i in Lecture_Rooms:
             Rooms.append(i[0])
         rooms_dict = {k : v for k, v in enumerate(Rooms)}
+
+        for i in University_Days:
+            days_dict = {k : v for k, v in enumerate(University_Days)}
 
         event_names = ['event-%s' % (i+1) for i in range(len(Modules))]
         event_dict = dict(zip(Modules, event_names))
@@ -204,6 +202,21 @@ def runz3Solver():
                         And(*[uniObj_sl[i].room != room for room in LectureRooms_nonPref[j][1]]),
                         True)
                 constraint08.append(expression08)
+        
+        ## Constraint09: which takes into consideration the faculty's teaching day preference constraints.
+        for m in range(len(TeachingDay_nonPref)):
+            for n in range(len(TeachingDay_nonPref[m][1])):
+                for i,j in days_dict.items():
+                    if j == TeachingDay_nonPref[m][1][n]:
+                        TeachingDay_nonPref[m][1][n] = i 
+                
+        constraint09 = []
+        for i in range(len(uniObj_sl)):
+            for j in range(len(TeachingDay_nonPref)):
+                expression09 = If(uniObj_sl[i].faculty == TeachingDay_nonPref[j][0],
+                        And(*[uniObj_sl[i].day != day for day in TeachingDay_nonPref[j][1]]),
+                        True)
+                constraint09.append(expression09)
 
         ## Asserting constraints into the Z3 solver
         S = Solver()
@@ -214,6 +227,7 @@ def runz3Solver():
         S.add(constraint05)
         S.add(constraint06)
         S.add(constraint07)
+        S.add(constraint08)
         S.add(constraint08)
 
         if S.check() == sat:
@@ -335,5 +349,4 @@ def runz3Solver():
         jsonFile = open("flaskr/output_data/BSc_CS_Y3.json", "w")
         jsonFile.write(jsonString6)
         jsonFile.close()
-    return render_template('viewData/timetableSchedule.html', data_dict=final_dict)
-    
+    return render_template('viewData/timetableSchedule.html', data_dict=final_dict)   
