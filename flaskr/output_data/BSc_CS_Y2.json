@@ -2,8 +2,8 @@
     "Monday": [
         [
             "MA2NAN",
-            "17:0",
-            "18:0",
+            "15:0",
+            "16:0",
             "POLLY-VACHER-G50",
             "Dr Peter Chamberlain",
             [
@@ -17,8 +17,8 @@
         ],
         [
             "MA2DE",
-            "15:0",
             "16:0",
+            "17:0",
             "POLLY-VACHER-G45",
             "Dr Peter Sweby",
             [
@@ -34,27 +34,39 @@
     ],
     "Tuesday": [
         [
-            "CS2JA16",
+            "MA2MPR",
+            "10:0",
             "11:0",
-            "12:0",
-            "POLLY-VACHER-G40",
-            "Dr Varun Ojha",
+            "PALMER-110",
+            "Dr Peter Sweby",
             [
                 "BSc-CS-Y2"
             ],
-            "event-23",
-            "Java",
+            "event-20",
+            "Mathematical Programming",
             [
-                "Autumn",
                 "Spring"
             ]
-        ]
-    ],
-    "Wednesday": [
+        ],
+        [
+            "MA2NAN",
+            "15:0",
+            "16:0",
+            "POLLY-VACHER-G50",
+            "Dr Peter Chamberlain",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-21",
+            "Numerical Analysis",
+            [
+                "Spring"
+            ]
+        ],
         [
             "CS2AO17",
-            "11:0",
-            "12:0",
+            "16:0",
+            "17:0",
             "POLLY-VACHER-G45",
             "PROF Xia Hong",
             [
@@ -68,12 +80,12 @@
             ]
         ]
     ],
-    "Thursday": [
+    "Wednesday": [
         [
             "MA2RCA",
-            "16:0",
             "17:0",
-            "PALMER-109",
+            "18:0",
+            "POLLY-VACHER-G56",
             "Dr Titus Hilberdink",
             [
                 "BSc-CS-Y2"
@@ -87,8 +99,8 @@
         ],
         [
             "MA2MPR",
-            "11:0",
-            "12:0",
+            "16:0",
+            "17:0",
             "POLLY-VACHER-G40",
             "Dr Peter Sweby",
             [
@@ -103,39 +115,9 @@
     ],
     "Friday": [
         [
-            "MA2MPR",
-            "11:0",
-            "12:0",
-            "PALMER-110",
-            "Dr Peter Sweby",
-            [
-                "BSc-CS-Y2"
-            ],
-            "event-20",
-            "Mathematical Programming",
-            [
-                "Spring"
-            ]
-        ],
-        [
-            "MA2NAN",
+            "MA2DE",
             "16:0",
             "17:0",
-            "POLLY-VACHER-G45",
-            "Dr Peter Chamberlain",
-            [
-                "BSc-CS-Y2"
-            ],
-            "event-21",
-            "Numerical Analysis",
-            [
-                "Spring"
-            ]
-        ],
-        [
-            "MA2DE",
-            "12:0",
-            "13:0",
             "POLLY-VACHER-G45",
             "Dr Peter Sweby",
             [
@@ -143,6 +125,22 @@
             ],
             "event-22",
             "Differential Equations",
+            [
+                "Autumn",
+                "Spring"
+            ]
+        ],
+        [
+            "CS2JA16",
+            "9:0",
+            "10:0",
+            "PALMER-110",
+            "Dr Varun Ojha",
+            [
+                "BSc-CS-Y2"
+            ],
+            "event-23",
+            "Java",
             [
                 "Autumn",
                 "Spring"

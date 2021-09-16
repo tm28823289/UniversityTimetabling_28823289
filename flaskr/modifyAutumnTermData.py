@@ -308,3 +308,28 @@ def DistributedSystemsandParallelComputing():
         autumndata = json.load(b)
     return render_template('modifyInputData/modifyautumntermdata/CS3DP19.html', autumndata=autumndata)
 
+@bp.route('/MIS16', methods=('GET', 'POST'))
+def SocialScience():
+    if request.method == "POST":
+        userreq = request.form
+        roomCapacity = userreq.get("capacity")
+        lectureDuration = [int(userreq.get("duration"))]
+        lectureFrequency = int(userreq.get("frequency"))
+        newDuration = [item for item in lectureDuration for i in range(lectureFrequency)]
+        a_file = open("flaskr/input_data/mainfile.json", "r")
+        json_object = json.load(a_file)
+        a_file.close()
+        for key in json_object.keys():
+            if key == 'Modules':
+                for n in range(len(json_object[key])):
+                    if json_object[key][n][0] == 'MIS16':
+                        json_object[key][n][1] = roomCapacity
+                        json_object[key][n][2] = newDuration
+        jsonString = json.dumps(json_object)
+        jsonFile = open("flaskr/input_data/mainfile.json", "w")
+        jsonFile.write(jsonString)
+        jsonFile.close()
+    with open("flaskr/input_data/mainfile.json", "r") as b:
+        autumndata = json.load(b)
+    return render_template('modifyInputData/modifyautumntermdata/MIS16.html', autumndata=autumndata)
+

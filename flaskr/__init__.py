@@ -109,6 +109,7 @@ def create_app(test_config=None):
     app.add_url_rule('/MA2VC', endpoint='modifyInputData.modifyautumntermdata.MA2VC')
     app.add_url_rule('/MA2PSM', endpoint='modifyInputData.modifyautumntermdata.MA2PSM')
     app.add_url_rule('/CS3DP19', endpoint='modifyInputData.modifyautumntermdata.CS3DP19')
+    app.add_url_rule('/MIS16', endpoint='modifyInputData.modifyautumntermdata.MIS16')
 
     app.register_blueprint(z3scheduler.bp)
     app.add_url_rule('/run-z3solver', endpoint='viewData.timetableSchedule')
